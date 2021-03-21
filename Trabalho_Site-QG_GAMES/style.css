@@ -1,0 +1,525 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+.container {
+    background-image: url(midia/fundo.png);
+    background-size: 100%;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(20, 20, 20);
+    margin: 0 auto;
+}
+
+/*---- Cabeçalho ----*/
+
+.topo {
+    color: white;
+    font-size: 40px;
+    text-align: center;
+    padding: 50px;
+}
+
+.topo h1 {
+    font-family: 'Roboto', sans-serif;
+}
+
+.topo img {
+    max-width: 150px;
+    height: auto;
+}
+
+.navegacao {
+    font: bold 50% sans-serif;
+    height: 8em;
+    width: 20%;
+    overflow: hidden;
+    padding: 5px 5px 0 5px;
+    transition: height 0.5s;
+    float: left;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.navegacao a {
+    display: block;
+    padding: 10px 10px 4px 10px;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.menu {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.menu ul {
+    margin-top: 5px;
+    padding: 0;
+}
+
+.menu li {
+    list-style: none;
+    font-size: 110%;
+    border-bottom: 1px solid #fff;
+}
+
+.navegacao h2 {
+    font-size: 35px;
+    color: white;
+    text-align: center;
+}
+
+.navegacao:hover,.navegacao:focus, .navegacao:active{
+    height: 40em;
+}
+
+a, a:active, a:visited{
+    text-decoration: none;
+    color: white;
+}
+
+a:hover{
+    text-decoration: underline;
+    color: #ad4850;
+}
+
+/*----- Introdução -----*/
+
+.introducao {
+    background-color: rgba(255, 255, 255, 0.192);
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 10px;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+
+.introducao h2 {
+    color: #ad4850;
+}
+
+/*----- Video -----*/
+
+.video {
+    max-width: 100%;
+    background-color: rgba(255, 255, 255, 0.192);
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 10px;
+}
+
+/*----- Article -----*/
+
+article {
+    height: auto;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/*----- Corpo ----- */
+
+.noticia-pai {
+    width: 40%;
+    height: auto;
+    margin: 0 auto;
+    text-align: justify;
+    color: white;
+    float: left;
+    margin-left: 3%;
+    margin-right: 3%;
+    margin-bottom: 30px;
+}
+
+.noticia-pai h2 {
+    padding: 10px 20px 20px 20px;
+    text-align: center;
+}
+
+.noticia-pai h3 {
+    padding: 10px 20px 20px 20px;
+    text-align: center;
+}
+
+.noticia-pai a {
+    text-decoration: none;
+    color: #ad4850;
+}
+
+.noticia img {
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+
+/*----- Box noticias -----*/
+
+/*----- Box imagem: Box1, Box2, Box3 -----*/
+
+.box1 {
+    float: left;
+    max-width: 50%;
+}
+
+.box2 {
+    float: left;
+    max-width: 50%;
+}
+
+.box3 {
+    float: left;
+    max-width: 50%;
+}
+
+/*----- Box texto: Box1-1, Box2-1, Box3-1 -----*/
+
+.box1-1 {
+    float: left;
+    max-width: 50%;
+    height: auto;
+    padding-left: 10px;
+}
+
+.box2-1 {
+    float: left;
+    max-width: 50%;
+    height: auto;
+    padding-left: 10px;
+}
+
+.box3-1 {
+    float: left;
+    max-width: 50%;
+    height: auto;
+    padding-left: 10px;
+}
+
+/*----- Background das Box: box-background-1, box-background-2, box-background-3 -----*/ 
+
+.box-background-1 {
+    background-color: rgba(255, 255, 255, 0.192);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.box-background-2 {
+    background-color: rgba(255, 255, 255, 0.192);
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.box-background-3 {
+    background-color: rgba(255, 255, 255, 0.192);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+/*----- Banner -----*/
+
+.banner {
+    display: flex;
+    flex-direction: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider {
+    width: 100%;
+    max-width: 800px;
+    height: 25vw;
+    max-height: 150px;
+    position: relative;
+}
+
+.slider img{
+    opacity: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity 800ms;
+    border-radius: 10px;
+}
+
+.slider img.selected { 
+    opacity: 1;
+}
+
+/*----- Novidades -----*/
+
+.novidade-pai {
+    width: 30%;
+    height: 1000px;
+    float: left;
+    color: white;
+    margin-right: 3%;
+}
+
+.novidade-1 {
+    background-color: rgba(255, 255, 255, 0.192);
+    background-position:center;
+    background-size: 100%;
+
+    
+    height: auto;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.novidade-2 {
+    background-color: rgba(255, 255, 255, 0.192);
+    background-position:center;
+    background-size: 100%;
+   
+    height: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+}
+
+.novidade-3 {
+    background-color: rgba(255, 255, 255, 0.192);
+    background-position:center;
+    background-size: 100%;
+   
+    height: auto;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+}
+
+.novidade-2 img {
+    opacity: 0.5;
+}
+
+.novidade-pai h2 {
+    text-align: center;
+    color: white;
+    margin: 10px;
+    font-size: 35px;
+}
+
+.novidade-pai h3 {
+    padding-bottom: 10px;
+    color: #ad4850;
+    font-size: 20px;
+}
+
+.novidade-pai a {
+    text-decoration: none;
+    color: white;
+}
+
+.ver-artigo {
+    font-family: DINNextW05-Bold,arial,georgia,sans-serif;
+    margin-right: 1em;
+    font-size: 1rem;
+    line-height: 1.25;
+    letter-spacing: -.025em;
+    display: flex;
+    align-items: center;
+    color: #ad4850;
+    border: none;
+    background: none;
+    padding: 0;
+    cursor: pointer;
+    padding-top: 10px;
+}
+
+/*----- Rodapé -----*/
+
+.rodape-prin {
+    background-color:  rgb(20, 20, 20);
+    clear: both;
+    padding: 28px;
+    color: rgb(250,255,250);
+    font-size: 15px;
+    bottom: 0px;
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.icones-sociais li {
+    display: inline-block;
+    float: right;
+    width: 40px;
+    height: 40px;
+}
+
+.rodape-prin img {
+    max-width: 30px;
+}
+
+/*----- Media Ipad -----*/
+
+@media screen and (max-width: 992px) {
+    .container {
+        margin: 0 auto;
+    }
+
+    .topo {
+        margin: 0 auto;
+        font-size: 30px;
+        padding: 45px;
+        text-align: center;
+    }
+
+    .introducao {
+        padding: 0 20px 20px 20px;
+    }
+
+    .noticia-pai {
+        width: 70%;
+        height: auto;
+        margin: 0 auto;
+        text-align: center;
+        margin-left: 5%;
+    }
+    
+    #slider {
+        width: 100%;
+        max-width: 800px;
+        height: 25vw;
+        max-height: 150px;
+        position: relative;
+    }
+
+    .navegacao {
+        height: 5em;
+    }
+
+    .navegacao:hover,.navegacao:focus, .navegacao:active{
+        height: 50em;
+    }
+
+    .navegacao h2 {
+        font-size: 25px;
+    }
+
+    .novidade-pai {
+        width: 70%;
+        height: auto;
+        float: right;
+        margin: 0 auto;
+        margin-right: 5%;
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+    .rodape-prin {
+       margin: 0 auto;
+    }
+}
+
+/*----- Media Iphone -----*/
+
+@media screen and (max-width: 600px) {
+    .container {
+        margin: 0 auto;
+    }
+
+    .navegacao {
+        font: bold 50% sans-serif;
+        height: 6em;
+        width: auto;
+        overflow: hidden;
+        padding: 5px 5px 0 5px;
+        transition: height 0.5s;
+        float: none;
+        margin-right: 2%;
+        margin-left: 2%;
+    }
+
+    .navegacao:hover,.navegacao:focus, .navegacao:active{
+        height: 40em;
+        margin-right: 2%;
+        margin-left: 2%;
+    }
+
+    .menu ul {
+        margin-top: 5px;
+        padding: 0;
+    }
+
+    article {
+        height: auto;
+    }
+
+    .introducao {
+        padding: 0 20px 20px 20px;
+    }
+
+    .noticia-pai {
+        width: auto;
+        height: auto;
+        margin: 0 auto;
+        text-align: center;
+        float: none;
+        margin-right: 2%;
+        margin-left: 2%;
+    }
+    
+    .box1 {
+        float: none;
+        max-width: 100%;
+    }
+    
+    .box2 {
+        float: none;
+        max-width: 100%;
+    }
+    
+    .box3 {
+        float: none;
+        max-width: 100%;
+    }
+
+    .box1-1 {
+        float: none;
+        max-width: 100%;
+        height: auto;
+        padding-left: 10px;
+        text-align: center;
+    }
+    
+    .box2-1 {
+        float: none;
+        max-width: 100%;
+        height: auto;
+        padding-left: 10px;
+        text-align: center;
+    }
+    
+    .box3-1 {
+        float: none;
+        max-width: 100%;
+        height: auto;
+        padding-left: 10px;
+        text-align: center;
+    }
+
+    .novidade-pai {
+        width: auto;
+        height: auto;
+        float: none;
+        margin: 0 auto;
+        margin-top: 10px;
+        margin-right: 2%;
+        margin-left: 2%;
+    }
+    .rodape-prin {
+       margin: 0 auto;
+       margin-top: 50px;
+    }
+
+}
+
